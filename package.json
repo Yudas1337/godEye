@@ -1,0 +1,19 @@
+{
+  "name": "siakad_tracer",
+  "version": "1.0.0",
+  "description": "This repository is for backend polinema siakad tracer apps. crafted with express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yudas",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "nodemon": "^2.0.14",
+    "pg": "^8.7.1"
+  }
+}
