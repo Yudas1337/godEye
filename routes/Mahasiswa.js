@@ -1,9 +1,11 @@
 const MhsRoutes = require('express').Router()
 const controller = require('../controllers/Mahasiswa')
-const middleware = require('../middleware/index')
 
-MhsRoutes.post('/login', async (req, res) => {
-    await controller.login(req, res)
+MhsRoutes.get('/angkatan', async (req, res) => {
+    const data = await controller.angkatan(req, res)
+    res.status(200).send({
+        data: data
+    })
 })
 
 module.exports = MhsRoutes

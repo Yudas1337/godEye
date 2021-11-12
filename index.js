@@ -2,11 +2,10 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const hbs = require('hbs')
-const config = require('./database/index')
 const MhsRoutes = require('./routes/Mahasiswa')
 const middleware = require('./middleware/index')
 const cors = require('cors')
-config.connect()
+
 
 app.use(cors())
 app.set('views', path.join(__dirname, 'views'))
